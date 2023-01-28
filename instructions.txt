@@ -1,0 +1,14 @@
+
+Task 2
+You have been given the design for a new component to be used on Aviva websites, please build this using HTML, CSS and JavaScript and supply back to us the built component.
+
+The designs show the four states each option can be in:
+- The white default closed state
+- The grey hover state
+- The blue focus state
+- The green selected and open state
+Each option starts as closed and then opens to reveal extra information once selected.
+
+The design is supplied in png format to make it simple to open (see "task-2" folder) and so we do not expect you to be 'pixel perfect' in matching the design, please get as close as you can, however we are mainly interested in the code you write.
+
+We would prefer to see as much of your own code as possible, but if you feel using third-party code is appropriate then please clearly indicate where you have used it and why.

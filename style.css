@@ -1,0 +1,107 @@
+/* global styles */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* form styles */
+#form {
+  max-width: 90%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.form__title {
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+/* option specific styles */
+.option {
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.option:first-of-type {
+  border-top: 1px solid lightgray;
+}
+
+.option:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.option__title {
+  margin-top: 15px;
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+.option__copy {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+/* hide/show option details */
+.option__title,
+.option__copy {
+  display: none;
+}
+
+.open.option__item ~ .option__title,
+.open.option__item ~ .option__copy {
+  display: block;
+}
+.open.option__item ~ .option__name {
+  font-weight: 600;
+}
+/* button styles */
+.btn {
+  padding: 15px;
+  background-color: #ffd900;
+  color: #004fb6;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+/* radio button styles */
+/* inspired by https://codepen.io/triss90/pen/XNEdRe */
+.option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.option input[type="radio"] + .option__circle:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+  margin-right: 15px;
+  margin-left: 15px;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.option input[type="radio"]:checked + .option__circle:before {
+  background-color: #66b24c;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.option input[type="radio"]:focus + .option__circle:before {
+  outline: none;
+  border-color: #66b24c;
+}
+.option input[type="radio"]:disabled + .option__circle:before {
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+  border-color: #b4b4b4;
+  background: #b4b4b4;
+}
+
+/* aviva green #66b24c */
